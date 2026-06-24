@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin – Manage Products</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    <span id="user-info">
+      Welcome <span id="username"></span>
+      |
+      <a href="#" id="logout-link">Logout</a>
+    </span>
+  </nav>
+
+  <h1>Admin Product Management</h1>
+
+  <h2>Create Product</h2>
+  <form id="create-product-form">
+    <label>Name:
+      <input type="text" id="product-name" required>
+    </label><br>
+    <label>Description:
+      <input type="text" id="product-description">
+    </label><br>
+    <label>Price:
+      <input type="number" id="product-price" step="0.01" required>
+    </label><br>
+    <label>Image URL:
+      <input type="text" id="product-image">
+    </label><br>
+    <label>Stock:
+      <input type="number" id="product-stock" required>
+    </label><br>
+    <button type="submit">Create</button>
+  </form>
+
+  <h2>Existing Products</h2>
+  <div id="admin-products"></div>
+
+  <script src="js/common.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

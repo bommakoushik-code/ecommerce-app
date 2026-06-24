@@ -1,0 +1,63 @@
+/*
+ * Simple stylesheet for the e‑commerce demo. Provides basic layout
+ * and visual separation of components. Feel free to customise
+ * colours, spacing and fonts to suit your needs.
+ */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.product, .cart-item, .admin-product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.product img {
+  max-width: 100px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.cart-item input.qty {
+  width: 50px;
+}
+
+button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #218838;
+}
